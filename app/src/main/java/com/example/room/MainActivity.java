@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         //写数据库
         Log.d(TAG, "开始写入数据...");
-        writeDatabase(mUserDao, "钟鸣", 18,"男");
-        writeDatabase(mUserDao, "丁秋萍", 19,"女");
+        writeDatabase(mUserDao, "鸣鸣", 18,"男");
+        writeDatabase(mUserDao, "秋秋", 19,"女");
         Log.d(TAG, "写入数据库完毕.");
 
         //读数据库
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "更新数据库...");
         User u = new User();
         u.id = 2;
-        u.name = "钟鸣";
+        u.name = "鸣鸣";
         u.age = 18;
         u.sex="男";
         dao.updateUser(u);
